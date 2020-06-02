@@ -57,10 +57,10 @@ jobs:
     - provider: pypi
       edge: true
       user: ${PYPI_USER}
-      password: ${PTEST_TOKEN}
+      password: ${PYPI_TOKEN}
       skip_existing: true
       distributions: "sdist bdist_wheel"
-      server: https://test.pypi.org/legacy/
+      #server: https://test.pypi.org/legacy/
       on:
         #branch: master
         all_branches: true
