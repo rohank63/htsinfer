@@ -57,7 +57,7 @@ jobs:
     deploy:
     - provider: pypi
       user: ${PYPI_USER}
-      password: pypi-AgEIcHlwaS5vcmcCJDYxODlmM2Q5LWE0YjItNGE4NC1hMmUzLTBmZTAxMmQ2YTY3NQACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgJBb2QEC7KIxNNZf2d6kVw1vhVEeRKJIcK77AM-BUaZc
+      password: "pypi-AgEIcHlwaS5vcmcCJDYxODlmM2Q5LWE0YjItNGE4NC1hMmUzLTBmZTAxMmQ2YTY3NQACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgJBb2QEC7KIxNNZf2d6kVw1vhVEeRKJIcK77AM-BUaZc"
       skip_existing: true
       skip_cleanup: true
       distributions: "sdist bdist_wheel"
