@@ -57,7 +57,7 @@ jobs:
     - provider: pypi
       edge: true
       user: ${PYPI_USER}
-      password: ${PYPI_TOKEN}
+      password: pypi-AgEIcHlwaS5vcmcCJDYxODlmM2Q5LWE0YjItNGE4NC1hMmUzLTBmZTAxMmQ2YTY3NQACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgJBb2QEC7KIxNNZf2d6kVw1vhVEeRKJIcK77AM-BUaZc
       skip_existing: true
       skip_cleanup: true
       distributions: "sdist bdist_wheel"
