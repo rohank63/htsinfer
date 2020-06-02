@@ -18,7 +18,8 @@ stages:
 - name: test
   if: branch = abcdef
 - name: publish
-  #if: branch = master AND type = push AND fork = false
+  #if: branch = master AND type = push AND fork = fals
+- name: dep
 
 jobs:
   include:
@@ -50,7 +51,7 @@ jobs:
     - echo ${DOCKER_PASSWORD} | docker login -u ${DOCKER_USER} --password-stdin
     - docker push ${REPO}:latest
     - docker push ${REPO}:${VERSION}
-  - stage: publish
+  - stage: dep
     name: Publish on PyPI
     script: skip
     deploy:
@@ -59,8 +60,8 @@ jobs:
       user: ${PYPI_USER}
       password: pypi-AgEIcHlwaS5vcmcCJDYxODlmM2Q5LWE0YjItNGE4NC1hMmUzLTBmZTAxMmQ2YTY3NQACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgJBb2QEC7KIxNNZf2d6kVw1vhVEeRKJIcK77AM-BUaZc
       skip_existing: true
-      skip_cleanup: true
-      distributions: "sdist bdist_wheel"
+      #skip_cleanup: true
+      #distributions: "sdist bdist_wheel"
       #server: https://test.pypi.org/legacy/
       on:
         #branch: master
