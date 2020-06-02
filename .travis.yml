@@ -57,11 +57,11 @@ jobs:
     deploy:
     - provider: pypi
       username: "__token__"
-      password: "pypi-AgEIcHlwaS5vcmcCJDYxODlmM2Q5LWE0YjItNGE4NC1hMmUzLTBmZTAxMmQ2YTY3NQACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgJBb2QEC7KIxNNZf2d6kVw1vhVEeRKJIcK77AM-BUaZc"
+      password: ${PTEST_TOKEN}
       skip_existing: true
       skip_cleanup: true
       distributions: "sdist bdist_wheel"
-      #server: https://test.pypi.org/legacy/
+      server: https://test.pypi.org/legacy/
       on:
         #branch: master
         all_branches: true
