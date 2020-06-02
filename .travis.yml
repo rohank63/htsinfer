@@ -27,7 +27,7 @@ jobs:
     name: Run build, style, unit and integration tests
     script:
     - export REPO=${DOCKER_ORGANIZATION}/${DOCKER_REPO}
-    # build tests
+    # build test
     - docker build -t ${REPO} .
     # style test
     - flake8
