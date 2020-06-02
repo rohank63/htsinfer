@@ -29,7 +29,7 @@ jobs:
     - export REPO=${DOCKER_ORGANIZATION}/${DOCKER_REPO}
     # build tests
     - docker build -t ${REPO} .
-    # style tests
+    # style test
     - flake8
     - pylint --rcfile pylint.cfg setup.py
     - pylint --rcfile pylint.cfg src/
